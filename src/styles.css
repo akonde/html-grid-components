@@ -39,18 +39,68 @@
     https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors
 */
 
-.two-column-grid__expand-two {}
+.two-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+}
 
-.three-column-grid {}
+.three-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
 
-.three-column-grid__expand-two {}
+.three-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: 1fr 16fr 1fr;
+  gap: 10px;
+}
 
-.five-column-grid {}
+.five-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
 
-.center-grid {}
+.center-grid {
+  display: grid;
+  justify-content: center;
+}
+.centered {
+  display: grid;
+  width: 160px;
+  align-self: center;
+}
 
-.grid-in-grid-1 {}
+.grid-in-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.grid-in-grid-1 > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.grid-in-grid-1 > div:last-child  {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
 
-.grid-in-grid-2 {}
+.grid-in-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 6fr 3fr;
+  gap: 10px;
+}
+.grid-in-grid-2 > div:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
 
-.grid-madness {}
+.grid-madness {
+display: grid;
+gap: 10px;
+}
